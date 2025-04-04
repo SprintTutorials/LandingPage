@@ -1,25 +1,49 @@
 body{
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    background-color: #07574c;
     padding: 0;
     margin: 0;
+    border: black 1px solid;
+}
+
+
+.container{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url('../elements/wallpaper.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #07574c;
+    
 }
 
 .navigation{
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     box-shadow: 0 4px 3px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
     width: 100%;
 }
 
 .logo{
     opacity: 0;
-    width: 100px;
-    margin: 10px 0px;
+    width: 120px;
     animation: fadeIn 1s forwards 2s;
+}
+
+.navigation button{
+    width: 55%;
+    background-color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #386666;
+    border-radius: 5px;
+    border: none;
+    margin-right: 10px;
+    padding: 15px 0px;
 }
 
 @keyframes fadeIn {
@@ -29,57 +53,6 @@ body{
     to{
         opacity: 1;
     }
-}
-
-.headline{
-    color: white;
-    font-family: Poppins, sans-serif;
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 5px;
-}
-
-.label1{
-    width: 80%;
-    background-color: #dde361;
-    border-radius: 20px;
-    border: black 3px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 5px;
-}
-
-.paragraph1{
-    text-align: center;
-    font-family: Poppins, sans-serif;
-    font-size: 1.2rem;
-    color: #07574c;
-    font-weight: bold;
-}
-
-p{
-    color: white;
-    font-family: Poppins, sans-serif;
-    text-align: center;
-}
-
-.btn{
-    width: 80%;
-    background-color: #dde361;
-    border-radius: 20px;
-    border: black 3px solid;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 15px 5px;
-    text-align: center;
-    font-family: Poppins, sans-serif;
-    font-size: 1.2rem;
-    color: #07574c;
-    font-weight: bold;
-
-    margin-bottom: 20px;
 }
 
 .swipe-card{
@@ -103,4 +76,42 @@ p{
     to{
         bottom: 2000px;
     }
+}
+
+.headline{
+    font-family: Poppins, sans-serif;
+    text-align: center;
+    color: rgb(252, 178, 86);
+    font-weight: bold;
+    font-size: 2.2rem;
+    margin-bottom: 0px;
+}
+
+.sub-headline{
+    font-family: Poppins, sans-serif;
+    color: white;
+    font-size: 1.1rem;
+}
+
+white{
+    color: white;
+}
+
+p{
+    font-family: Poppins, sans-serif;
+    color: white;
+}
+
+.btn{
+    width: 90%;
+    background-color: white;
+    font-family: Poppins, sans-serif;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #386666;
+    border-radius: 5px;
+    border: none;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    padding: 15px 0px;
 }
