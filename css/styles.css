@@ -87,6 +87,7 @@ body{
     margin-bottom: 0px;
 }
 
+
 .sub-headline{
     font-family: Poppins, sans-serif;
     color: white;
@@ -114,4 +115,17 @@ p{
     margin-bottom: 40px;
     margin-top: 40px;
     padding: 15px 0px;
+}
+
+.info{
+    background-color: #386666;
+    color: white;
+    text-align: justify;
+    padding: 10px;
+    border-radius: 20px;
+}
+
+.test{
+    margin-top: 30px;
+    width: 70%;
 }
